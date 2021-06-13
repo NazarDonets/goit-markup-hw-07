@@ -1,0 +1,94 @@
+.header {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  height: 80px;
+  background-color: $white;
+  border-bottom: 1px solid #ececec;
+
+  & .logo {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+
+  &-menu {
+    margin-left: 93px;
+  }
+
+  &-contacts {
+    margin-left: auto;
+  }
+}
+
+.menu-item,
+.menu-item > .nav-link,
+.menu-item > .contacts-link {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.menu-item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.nav-link {
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  color: $dark-shade;
+  text-decoration: none;
+
+  &__active,
+  &:hover,
+  &:focus {
+    color: $brand-color;
+    transition: color $animation;
+  }
+
+  &__active::after {
+    content: "";
+    position: absolute;
+    bottom: -1px;
+    width: 100%;
+    height: 4px;
+    background-color: #2196f3;
+    border-radius: 2px;
+  }
+}
+
+.contacts-link {
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  color: $dark-shade;
+  text-decoration: none;
+  color: $light-shade;
+
+  &:hover,
+  &:focus {
+    color: $brand-color;
+    transition: color $animation;
+  }
+}
+
+.contacts-item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.contacts-icon {
+  height: 100%;
+  margin-right: 10px;
+
+  &__email {
+    width: 16px;
+  }
+
+  &__phone {
+    width: 10px;
+  }
+}

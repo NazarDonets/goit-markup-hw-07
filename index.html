@@ -14,7 +14,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
     />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
     <!-- header -->
@@ -67,7 +67,7 @@
     <!-- /header -->
     <!-- main -->
     <main>
-      <section class="hero-section section">
+      <section class="hero section">
         <div class="container">
           <div class="hero-content">
             <h1 class="hero-headline">
@@ -79,7 +79,7 @@
           </div>
         </div>
       </section>
-      <section class="advantages-section section">
+      <section class="advantages section">
         <div class="container">
           <h2 class="visually-hidden">Наши преимущества</h2>
           <ul class="advantages-list">
@@ -177,7 +177,7 @@
           </ul>
         </div>
       </section>
-      <section class="team-section section">
+      <section class="team section">
         <div class="container">
           <h2 class="team-heading">Наша команда</h2>
           <ul class="team-list">
@@ -190,9 +190,9 @@
                 alt="Игорь Демьяненко"
               />
               <div class="teammember-info">
-                <h3 class="teammember-name">Игорь Демьяненко</h3>
-                <p class="teammember-role">Product Designer</p>
-                <ul class="teammember-socials">
+                <h3 class="teammember-info--name">Игорь Демьяненко</h3>
+                <p class="teammember-info--role">Product Designer</p>
+                <ul class="teammember-info--socials">
                   <li class="socials-item">
                     <a class="socials-link" href="#">
                       <svg width="20" height="20" class="socials-icon">
@@ -233,9 +233,9 @@
                 alt="Ольга Репина"
               />
               <div class="teammember-info">
-                <h3 class="teammember-name">Ольга Репина</h3>
-                <p class="teammember-role">Frontend Developer</p>
-                <ul class="teammember-socials">
+                <h3 class="teammember-info--name">Ольга Репина</h3>
+                <p class="teammember-info--role">Frontend Developer</p>
+                <ul class="teammember-info--socials">
                   <li class="socials-item">
                     <a class="socials-link" href="#">
                       <svg width="20" height="20" class="socials-icon">
@@ -276,9 +276,9 @@
                 alt="Николай Тарасов"
               />
               <div class="teammember-info">
-                <h3 class="teammember-name">Николай Тарасов</h3>
-                <p class="teammember-role">Marketing</p>
-                <ul class="teammember-socials">
+                <h3 class="teammember-info--name">Николай Тарасов</h3>
+                <p class="teammember-info--role">Marketing</p>
+                <ul class="teammember-info--socials">
                   <li class="socials-item">
                     <a class="socials-link" href="#">
                       <svg width="20" height="20" class="socials-icon">
@@ -319,9 +319,9 @@
                 alt="Михаил Ермаков"
               />
               <div class="teammember-info">
-                <h3 class="teammember-name">Михаил Ермаков</h3>
-                <p class="teammember-role">UI Designer</p>
-                <ul class="teammember-socials">
+                <h3 class="teammember-info--name">Михаил Ермаков</h3>
+                <p class="teammember-info--role">UI Designer</p>
+                <ul class="teammember-info--socials">
                   <li class="socials-item">
                     <a class="socials-link" href="#">
                       <svg width="20" height="20" class="socials-icon">
@@ -510,7 +510,7 @@
               id="username"
               name="user-name"
               type="text"
-              placeholder=" "
+              placeholder="Иван Иванов"
               required
             />
             <label class="input-label" for="username">Имя</label>
@@ -526,7 +526,7 @@
               id="phone"
               name="user-phone"
               type="tel"
-              placeholder=" "
+              placeholder="+380** *** ** **"
               required
             />
             <label class="input-label" for="phone">Телефон</label>
@@ -542,7 +542,7 @@
               id="email"
               name="user-email"
               type="email"
-              placeholder=" "
+              placeholder="example@email.com"
               required
             />
             <label class="input-label" for="email">Почта</label>
