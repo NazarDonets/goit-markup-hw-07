@@ -1,17 +1,17 @@
-.occupation-heading {
+.occupation__heading {
   text-align: center;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
 }
 
-.occupation-list {
+.occupation__list {
   margin-top: 50px;
   display: flex;
   flex-wrap: wrap;
 }
 
-.occupation-item {
+.occupation__item {
   position: relative;
 
   &:not(:last-child) {
@@ -19,11 +19,11 @@
   }
 }
 
-.occupation-image {
+.occupation__image {
   display: block;
 }
 
-.occupation-description {
+.occupation__description {
   position: absolute;
   left: 0;
   bottom: 0;

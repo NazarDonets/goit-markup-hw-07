@@ -6,27 +6,9 @@
   height: 80px;
   background-color: $white;
   border-bottom: 1px solid #ececec;
-
-  & .logo {
-    display: flex;
-    height: 100%;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-  }
-
-  &-menu {
-    margin-left: 93px;
-  }
-
-  &-contacts {
-    margin-left: auto;
-  }
 }
 
-.menu-item,
-.menu-item > .nav-link,
-.menu-item > .contacts-link {
+.header .logo {
   display: flex;
   height: 100%;
   align-items: center;
@@ -34,24 +16,42 @@
   position: relative;
 }
 
-.menu-item:not(:last-child) {
+.header__menu {
+  margin-left: 93px;
+}
+
+.contacts__list {
+  margin-left: auto;
+}
+
+.header__item,
+.header__item > .header__link,
+.header__item > .contacts__link {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.header__item:not(:last-child) {
   margin-right: 50px;
 }
 
-.nav-link {
+.header__link {
   font-weight: 500;
   letter-spacing: 0.02em;
   color: $dark-shade;
   text-decoration: none;
 
-  &__active,
+  &--active,
   &:hover,
   &:focus {
     color: $brand-color;
     transition: color $animation;
   }
 
-  &__active::after {
+  &--active::after {
     content: "";
     position: absolute;
     bottom: -1px;
@@ -62,33 +62,33 @@
   }
 }
 
-.contacts-link {
+.contacts__link {
   font-weight: 500;
   letter-spacing: 0.02em;
   color: $dark-shade;
   text-decoration: none;
   color: $light-shade;
+  transition: color $animation;
 
   &:hover,
   &:focus {
     color: $brand-color;
-    transition: color $animation;
   }
 }
 
-.contacts-item:not(:last-child) {
+.contacts__item:not(:last-child) {
   margin-bottom: 9px;
 }
 
-.contacts-icon {
+.contacts__icon {
   height: 100%;
   margin-right: 10px;
 
-  &__email {
+  &--email {
     width: 16px;
   }
 
-  &__phone {
+  &--phone {
     width: 10px;
   }
 }

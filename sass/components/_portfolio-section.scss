@@ -1,4 +1,4 @@
-.filter-options {
+.filter__options {
   display: flex;
   height: 100%;
   align-items: center;
@@ -6,11 +6,11 @@
   position: relative;
 }
 
-.filter-item:not(:last-child) {
+.filter__item:not(:last-child) {
   margin-right: 8px;
 }
 
-.filter-button {
+.filter__button {
   padding: 6px 22px;
   border-radius: 4px;
   background-color: $brand-color;
@@ -33,18 +33,18 @@
   }
 }
 
-.projects-list {
+.project__list {
   margin-top: 50px;
   display: flex;
   flex-wrap: wrap;
 }
 
-.project-thumbnail,
-.project-link {
+.project__thumbnail,
+.project__link {
   display: block;
 }
 
-.project-item {
+.project__item {
   margin-right: 30px;
   margin-bottom: 30px;
 
@@ -57,7 +57,7 @@
   }
 }
 
-.project-link {
+.project__link {
   text-decoration: none;
 
   &:hover,
@@ -68,13 +68,13 @@
   }
 }
 
-.animation-container {
+.project__animation-container {
   position: relative;
   overflow: hidden;
   width: 100%;
 }
 
-.animation-content {
+.project__animation-content {
   position: absolute;
   display: flex;
   height: 100%;
@@ -91,12 +91,12 @@
   }
 }
 
-.project-link:hover .animation-content,
-.project-link:focus .animation-content {
+.project__link:hover .project__animation-content,
+.project__link:focus .project__animation-content {
   transform: translateY(-100%);
 }
 
-.project-info {
+.project__info {
   padding: 20px 24px;
   background: #ffffff;
   border-left: 1px solid #eeeeee;
@@ -104,7 +104,7 @@
   border-bottom: 1px solid #eeeeee;
 }
 
-.project-heading {
+.project__info-heading {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -112,7 +112,7 @@
   color: $dark-shade;
 }
 
-.project-description {
+.project__info-description {
   font-size: 16px;
   line-height: 1.87;
   color: $light-shade;

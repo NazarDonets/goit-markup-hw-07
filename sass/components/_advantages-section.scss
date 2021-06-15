@@ -1,11 +1,11 @@
 .advantages {
   padding-bottom: 0;
 
-  &-list {
+  &__list {
     display: flex;
   }
 
-  &-item {
+  &__item {
     width: 270px;
 
     &:not(:last-child) {
@@ -13,7 +13,7 @@
     }
   }
 
-  &-icon {
+  &__icon {
     display: flex;
     height: 120px;
     justify-content: center;
@@ -23,13 +23,13 @@
     margin-bottom: 30px;
   }
 
-  &-heading {
+  &__heading {
     font-weight: 700;
     font-size: 14px;
     text-transform: uppercase;
   }
 
-  &-description {
+  &__description {
     margin-top: 10px;
     line-height: 1.71;
     color: $light-shade;
