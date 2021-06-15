@@ -987,7 +987,7 @@ textarea:focus-within + .input-label-textarea {
   background-color: #2196f3;
 }
 
-.footer__socials__cta-text,
+.footer__socials-cta-text,
 .footer__newsletter-cta-text {
   font-weight: 700;
   text-transform: uppercase;
