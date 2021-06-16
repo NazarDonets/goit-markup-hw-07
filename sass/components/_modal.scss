@@ -1,4 +1,4 @@
-.submit-button {
+.modal__contact-us-form-submit-button {
   margin-top: 30px;
   width: 200px;
   height: 50px;
@@ -22,7 +22,7 @@
   }
 }
 
-.backdrop-filter {
+.modal__backdrop {
   position: fixed;
   z-index: 2;
   top: 0;
@@ -37,7 +37,7 @@
   transition: opacity &animation;
 }
 
-.form-modal {
+.modal__popup {
   position: relative;
   max-width: 528px;
   background-color: $white;
@@ -48,7 +48,7 @@
   text-align: center;
 }
 
-.close-button {
+.modal__close-button {
   position: absolute;
   top: 8px;
   right: 8px;
@@ -71,12 +71,12 @@
   }
 }
 
-.close-icon {
+.modal__close-icon {
   width: 100%;
   height: 100%;
 }
 
-.form-heading {
+.modal__contact-us-form-heading {
   font-weight: 700;
   font-size: 20px;
   line-height: 1.15;
@@ -86,14 +86,14 @@
   margin-bottom: 30px;
 }
 
-.input-fieldset {
+.modal__contact-us-form-input-fieldset {
   position: relative;
   display: flex;
   align-items: center;
   margin-bottom: 28px;
 }
 
-.input-field {
+.modal__contact-us-form-input-field {
   width: 100%;
   height: 40px;
   padding: 14px 15px 14px 42px;
@@ -101,7 +101,7 @@
   border-radius: 4px;
 }
 
-.input-label {
+.modal__contact-us-form-input-label {
   position: absolute;
   color: $light-shade;
   font-size: 12px;
@@ -111,12 +111,14 @@
   transition: transform $animation;
 }
 
-.input-field:focus-within + .input-label,
-.input-field:not(:placeholder-shown) + .input-label {
+.modal__contact-us-form-input-field:focus-within
+  + .modal__contact-us-form-input-label,
+.modal__contact-us-form-input-field:not(:placeholder-shown)
+  + .modal__contact-us-form-input-label {
   transform: translate(0, -30px);
 }
 
-.input-icon {
+.modal__contact-us-form-input-icon {
   position: absolute;
   display: flex;
   align-items: center;
@@ -125,28 +127,30 @@
   transition: color $animation;
 }
 
-.input-field:focus-within ~ .input-icon,
-.input-field:focus-within + .input-label,
-textarea:focus-within + .input-label-textarea {
+.modal__contact-us-form-input-field:focus-within
+  ~ .modal__contact-us-form-input-icon,
+.modal__contact-us-form-input-field:focus-within
+  + .modal__contact-us-form-input-label,
+textarea:focus-within + .modal__contact-us-form-input-label-textarea {
   color: $brand-color;
 }
 
-.input-field:not(:focus)::placeholder {
+.modal__contact-us-form-input-field:not(:focus)::placeholder {
   color: transparent;
 }
 
-.input-fieldset > textarea {
+.modal__contact-us-form-input-fieldset > textarea {
   height: 120px;
   padding: 12px 16px;
   resize: none;
 }
 
-.input-fieldset:nth-last-child(2) {
+.modal__contact-us-form-input-fieldset:nth-last-child(2) {
   margin-bottom: 20px;
 }
 
-.input-fieldset > textarea::placeholder,
-.input-field::placeholder {
+.modal__contact-us-form-input-fieldset > textarea::placeholder,
+.modal__contact-us-form-input-field::placeholder {
   font-size: 12px;
   line-height: 1.16;
   letter-spacing: 0.01em;
@@ -154,7 +158,7 @@ textarea:focus-within + .input-label-textarea {
   transition: color $animation;
 }
 
-.input-label-textarea {
+.modal__contact-us-form-input-label-textarea {
   position: absolute;
   transform: translateY(-70px);
   font-size: 12px;
@@ -164,17 +168,17 @@ textarea:focus-within + .input-label-textarea {
   transition: color $animation;
 }
 
-.input-checkbox-fieldset {
+.modal__contact-us-form-input-checkbox-fieldset {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.input-checkbox {
+.modal__contact-us-form-input-checkbox {
   appearance: none;
 }
 
-.input-checkbox-label::before {
+.modal__contact-us-form-input-checkbox-label::before {
   content: "";
   display: inline-flex;
   height: 15px;
@@ -187,15 +191,16 @@ textarea:focus-within + .input-label-textarea {
   background-image: url("data:image/svg+xml,%3Csvg width='16' height='15' viewBox='0 0 16 15' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M14.2222 1.66667V13.3333H1.77778V1.66667H14.2222ZM14.2222 0H1.77778C0.8 0 0 0.75 0 1.66667V13.3333C0 14.25 0.8 15 1.77778 15H14.2222C15.2 15 16 14.25 16 13.3333V1.66667C16 0.75 15.2 0 14.2222 0Z' fill='%23212121'/%3E%3C/svg%3E%0A");
 }
 
-.input-checkbox:checked + .input-checkbox-label::before {
+.modal__contact-us-form-input-checkbox:checked
+  + .modal__contact-us-form-input-checkbox-label::before {
   background-image: url("data:image/svg+xml,%3Csvg width='16' height='15' viewBox='0 0 16 15' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='16' height='15' rx='2' fill='%232196F3'/%3E%3Cpath d='M3.95703 7.75166L3.88825 7.68604L3.81923 7.75141L2.93123 8.59258L2.85486 8.66492L2.93097 8.73753L6.42671 12.0724L6.49574 12.1382L6.56476 12.0724L14.069 4.91352L14.1449 4.84116L14.069 4.76881L13.1873 3.92764L13.1183 3.86183L13.0493 3.92761L6.49577 10.1735L3.95703 7.75166Z' fill='white' stroke='white' stroke-width='0.2'/%3E%3C/svg%3E%0A");
 }
 
-.input-checkbox:focus + .input-checkbox-label::before {
+.modal__contact-us-form-input-checkbox:focus + .input-checkbox-label::before {
   outline: 2px solid blue;
 }
 
-.input-checkbox-label {
+.modal__contact-us-form-input-checkbox-label {
   display: flex;
   align-items: center;
   font-size: 14px;
@@ -204,7 +209,7 @@ textarea:focus-within + .input-label-textarea {
   color: $light-shade;
 }
 
-.input-checkbox-label > a {
+.modal__contact-us-form-input-checkbox-label > a {
   color: $brand-color;
 }
 
@@ -216,7 +221,7 @@ textarea:focus-within + .input-label-textarea {
   margin: -1px;
 }
 
-.backdrop-filter__is-hidden {
+.modal__backdrop--is-hidden {
   pointer-events: none;
   opacity: 0;
   transform: opacity $animation;

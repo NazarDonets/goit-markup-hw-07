@@ -40,7 +40,7 @@
             </li>
           </ul>
         </nav>
-        <ul class="contacts__list flex-wrapper">
+        <ul class="header__contacts-list flex-wrapper">
           <li class="header__item">
             <a class="contacts__link" href="mailto:info@devstudio.com">
               <svg
@@ -501,90 +501,104 @@
       </div>
     </footer>
     <!-- /footer -->
-    <div class="backdrop-filter backdrop-filter__is-hidden" data-modal>
-      <div class="form-modal">
-        <button class="close-button" data-modal-close>
-          <svg class="close-icon" width="11" height="11">
+    <div class="modal__backdrop modal__backdrop--is-hidden" data-modal>
+      <div class="modal__popup">
+        <button class="modal__close-button" data-modal-close>
+          <svg class="modal__close-icon" width="11" height="11">
             <use href="./icons/icons.svg#icon-close"></use>
           </svg>
         </button>
-        <form class="contact-us-form">
-          <h2 class="form-heading">Оставьте свои данные, мы вам перезвоним</h2>
-          <div class="input-fieldset">
+        <form class="modal__contact-us-form">
+          <h2 class="modal__contact-us-form-heading">
+            Оставьте свои данные, мы вам перезвоним
+          </h2>
+          <div class="modal__contact-us-form-input-fieldset">
             <input
-              class="input-field"
+              class="modal__contact-us-form-input-field"
               id="username"
               name="user-name"
               type="text"
               placeholder="Иван Иванов"
               required
             />
-            <label class="input-label" for="username">Имя</label>
-            <span class="input-icon">
+            <label class="modal__contact-us-form-input-label" for="username"
+              >Имя</label
+            >
+            <span class="modal__contact-us-form-input-icon">
               <svg height="18" width="18">
                 <use href="./icons/icons.svg#icon-input-name"></use>
               </svg>
             </span>
           </div>
-          <div class="input-fieldset">
+          <div class="modal__contact-us-form-input-fieldset">
             <input
-              class="input-field"
+              class="modal__contact-us-form-input-field"
               id="phone"
               name="user-phone"
               type="tel"
               placeholder="+380** *** ** **"
               required
             />
-            <label class="input-label" for="phone">Телефон</label>
-            <span class="input-icon">
+            <label class="modal__contact-us-form-input-label" for="phone"
+              >Телефон</label
+            >
+            <span class="modal__contact-us-form-input-icon">
               <svg height="18" width="18">
                 <use href="./icons/icons.svg#icon-input-phone"></use>
               </svg>
             </span>
           </div>
-          <div class="input-fieldset">
+          <div class="modal__contact-us-form-input-fieldset">
             <input
-              class="input-field"
+              class="modal__contact-us-form-input-field"
               id="email"
               name="user-email"
               type="email"
               placeholder="example@email.com"
               required
             />
-            <label class="input-label" for="email">Почта</label>
-            <span class="input-icon">
+            <label class="modal__contact-us-form-input-label" for="email"
+              >Почта</label
+            >
+            <span class="modal__contact-us-form-input-icon">
               <svg height="18" width="18">
                 <use href="./icons/icons.svg#icon-input-email"></use>
               </svg>
             </span>
           </div>
-          <div class="input-fieldset">
+          <div class="modal__contact-us-form-input-fieldset">
             <textarea
-              class="input-field"
+              class="modal__contact-us-form-input-field"
               id="comment"
               name="user-comment"
               placeholder="Введите текст"
               required
             ></textarea>
-            <label class="input-label-textarea" for="comment"
+            <label
+              class="modal__contact-us-form-input-label-textarea"
+              for="comment"
               >Комментарий</label
             >
           </div>
-          <div class="input-checkbox-fieldset">
+          <div class="modal__contact-us-form-input-checkbox-fieldset">
             <input
-              class="input-checkbox"
+              class="modal__contact-us-form-input-checkbox"
               id="terms"
               type="checkbox"
               name="terms-agreement"
               value="true"
               required
             />
-            <label class="input-checkbox-label" for="terms"
+            <label
+              class="modal__contact-us-form-input-checkbox-label"
+              for="terms"
               >Соглашаюсь с рассылкой и принимаю&nbsp;
               <a href="">Условия договора</a></label
             >
           </div>
-          <button class="submit-button" type="submit">Отправить</button>
+          <button class="modal__contact-us-form-submit-button" type="submit">
+            Отправить
+          </button>
         </form>
       </div>
     </div>
